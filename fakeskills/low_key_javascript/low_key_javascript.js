@@ -37,6 +37,23 @@
         console.log(camper);
 //     ---------------------------------------
 
-/*
 
+// - Object.freeze(obj)
+//         - prevents data mutation of a variable.
+//         - what we thought "const" was doing. 
+
+//      -EXAMPLE------------------------------
+        let investor = {
+                name: "Justin",
+                review: "A really cool guy"
+        };
+
+        Object.freeze(investor);        //prevents 'name' and 'review' in "investor" from being mutated
+        investor.review = "Mean"        //results in error
+        investor.name = "Justin's evil clone"   //results in error
+//      --------------------------------------
+
+/*
+Arrow Functions vs Traditional Functions:
+- Arrow 
 */
