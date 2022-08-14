@@ -3,6 +3,12 @@
 // - Under the hood:
 //     - Empty strings are the string equivalent of 0
 
+//      -EXAMPLE-------------------------------
+        let zero = 0
+        let emptyString = ""
+        zero == emptyString     //returns true
+//      ---------------------------------------
+
 // - Promises
 //     - Function that fires off after another function.
 // - Async/await
@@ -21,7 +27,7 @@
 //         - Faster
 //         - Mainly used
 
-//     -EXAMPLE-------------------------------
+//      -EXAMPLE-------------------------------
         var camper = "James";
         var camper = "David";   //overrides James
         console.log(camper)     //returns David
@@ -35,8 +41,7 @@
         const camper = "Lloyd"  //causes error
         camper = "Lloyd"        //causes error
         console.log(camper);
-//     ---------------------------------------
-
+//      ---------------------------------------
 
 // - Object.freeze(obj)
 //         - prevents data mutation of a variable.
@@ -53,7 +58,48 @@
         investor.name = "Justin's evil clone"   //results in error
 //      --------------------------------------
 
+
+// - Traditional Functions:
+//         - Requires "return" keyword.
+//         - Requires brackets.
+// - Arrow Functions:
+//         - Syntax sugar for functions.
+//         - Arrow functions allow you to omit the keyword "return"
+//         - Arrow functions allow you to omit the brackets
+//         - This helps to simplify smaller functions into one-line statements
+
+//      -EXAMPLE------------------------------
+        //previous arrow functions
+        const writeFunction = function(){               //requires brackets                         
+                var something = "this is Something";  
+                return something;                       //requries "return"
+        }
+
+        //inline arrow functions
+        const arrowFunction = () => "this is Something";
+
+        //setting default values
+        const familySize = (parents = 2, kids) => parents + kids; //parents will default to 2 unless 1 is passed
+//      --------------------------------------
+
+
+// - Rest Parameter with Function Parameters
+//         - Allows you to create functions that take a variable number of arguments.
+//         - Args are stored in an Array that can be accessed later from inside the function.
+//         - The rest parameter allows us to apply .map(), .filter(), .reduce(), etc.
+
+//      -EXAMPLE------------------------------
+        const argCount = (...args) => console.log(`You passed ${args.length} arguments`)
+        argCount(1, 4, "mouse", [40, 19])       //will return "You passed 4 arguments"
+//      --------------------------------------
+
 /*
-Arrow Functions vs Traditional Functions:
-- Arrow 
+- Spread Operator
+        - Allows developer to expand arrays and other expressions in places where multiple parameters or elements are expected.
+        - Returns an unpacked array.
+        - Only works in-place, like an argument to a function.       
 */
+
+//      -EXAMPLE------------------------------
+        
+//      --------------------------------------
