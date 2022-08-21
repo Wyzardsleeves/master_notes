@@ -24,8 +24,9 @@
 // Install Typescript:
 
 // - Install Typescript Compiler Globally
-npm i -g typescript     //install typscript globally
-tsc -v                  //check if installation exist
+npm i -g typescript             //install typscript globally
+npm i --save-dev typescript     //installs typscript locally
+tsc -v                          //check if installation exist
 
 // - Compile Typscript
 tsc fileName                                //compiles fileName.ts
