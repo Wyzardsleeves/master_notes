@@ -44,9 +44,15 @@ file - name.js; // compiles fileName.ts with a new name of 'file-name.js
 tsc;
 fileName.ts - w; // compiles fileName.ts automatically with a "watch" tag
 tsc - w; // compiles everything and watches for changes
-// Setup Config File
+// Setup Config File:
+// - Create tsconfig
 tsc--;
-init; //creates a ts tsconfig.js file.
+init; // creates a ts tsconfig.js file.
+// - Set directories for interpreted TS and JS compiled JS
+"outDir";
+"./dist"; // sets compiled Javascript to populate a ""./dist" directory
+"rootDir";
+"./src"; // sets compiled Javascript to populate a ""./dist" directory
 /* Common config parameters
 {
     "compilerOptions": {
@@ -68,10 +74,17 @@ init; //creates a ts tsconfig.js file.
 }
 */
 //  Writing typescript
-/*
-let id = 5              //assigns id to 5 just like JS
-let id: number = 5      //assigns id to 5 and binds it as an Integer type
-id = '5'                // throws error that the string is not assignable to the type
-
-
-*/ 
+// Assigning Values
+let id = 5; //assigns id to 5 just like JS.
+let id = 5; //assigns id to 5 and binds it as an Integer type.
+id = '5'; // throws error that the string is not assignable to the type.
+// Basic Types
+let company = 'Travel'; // assigns company to 'Travel' and locks the type.
+let isSubscribed = true; // assigns isSubscribed to 'true' and locks boolean.
+let x = 'Hello'; // assigns x to "Hello" and allows any type.
+let age; // declaration only (can be reassigned but only to type)
+let ids = [1, 2, 3, 4, 5]; // assigns array and only can be occupied by numbers.
+let arr = ["dog", 9, {}]; // assigns an array occupied by any type.
+// Tuple
+let person = [1, 'Justin', true]; //strictly assigns values to person
+// Tuple Array
