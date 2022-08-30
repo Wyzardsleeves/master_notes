@@ -1,0 +1,14 @@
+{
+  "name": "two_pointers",
+  "version": "1.0.0",
+  "description": "Two Pointers playground",
+  "main": "two_pointers_playground.js",
+  "author": "Wyzardsleeves",
+  "license": "MIT",
+  "scripts": {
+    "run": "nodemon two_pointers_playground.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
